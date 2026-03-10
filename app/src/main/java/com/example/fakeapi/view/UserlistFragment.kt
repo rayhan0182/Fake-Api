@@ -16,11 +16,11 @@ class UserlistFragment : BaseFragment<FragmentUserlistBinding>(
 
 ) {
     override fun responsuser() {
-        TODO("Not yet implemented")
+
     }
 
     override fun createuser() {
-        TODO("Not yet implemented")
+
     }
 
 

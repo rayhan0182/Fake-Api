@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#3F51B5"
     tools:context=".starter.MainFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        app:lottie_rawRes="@raw/welcome_animation"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/showlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#14C888"
+        app:cornerRadius="7dp"
+        android:layout_marginHorizontal="50dp"
+        android:elevation="15dp"
+        android:text="Biodata"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#81B93A"
+        app:cornerRadius="7dp"
+        android:layout_marginHorizontal="50dp"
+        android:elevation="15dp"
+        android:text="create bio"/>
+
+
+
+</LinearLayout>
