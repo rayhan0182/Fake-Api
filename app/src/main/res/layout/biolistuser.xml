@@ -4,13 +4,14 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="8dp"
-    app:cardCornerRadius="5dp"
-    android:elevation="20dp">
+    app:cardCornerRadius="10dp"
+    android:elevation="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:background="@color/white"
         android:weightSum="2">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,36 +22,39 @@
 
      <TextView
          android:id="@+id/name"
-         android:layout_width="wrap_content"
+         android:layout_width="fill_parent"
          android:layout_height="wrap_content"
          android:paddingVertical="4dp"
-         android:paddingLeft="5dp"
+         android:paddingStart="5dp"
          android:text="@string/name_rayhan"
          android:textSize="15sp"
+         android:textColor="@color/black"
          android:textStyle="bold"
          app:layout_constraintStart_toStartOf="parent"
          app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
             android:id="@+id/uname"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:paddingVertical="4dp"
             android:paddingLeft="5dp"
             android:text="@string/username"
             android:textSize="15sp"
+            android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/name"/>
 
         <TextView
             android:id="@+id/email"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:paddingVertical="4dp"
-            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
             android:text="@string/email_mdrayhan8045_gmail_com"
             android:textSize="15sp"
+            android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/uname"/>
@@ -62,7 +66,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/email"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:src="@drawable/undo_arrow_icon"
             />
 
@@ -77,11 +81,12 @@
 
             <TextView
                 android:id="@+id/address"
-                android:layout_width="match_parent"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:paddingVertical="4dp"
                 android:gravity="center"
-                android:text="Address"
+                android:textColor="@color/black"
+                android:text="@string/address"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -90,60 +95,78 @@
 
             <TextView
                 android:id="@+id/street"
-                android:layout_width="match_parent"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:paddingVertical="3dp"
                 android:gravity="center"
-                android:text="street"
-                android:textSize="13dp"
+                android:text="@string/stree"
+                android:textColor="@color/black"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/address"/>
 
             <TextView
                 android:id="@+id/suite"
-                android:layout_width="match_parent"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:paddingVertical="3dp"
                 android:gravity="center"
-                android:text="suite"
-                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:text="@string/suite"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/street"/>
 
             <TextView
                 android:id="@+id/city"
-                android:layout_width="match_parent"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:paddingVertical="3dp"
                 android:gravity="center"
-                android:text="city"
-                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:text="@string/city"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/suite"/>
 
             <TextView
-                android:id="@+id/lat"
-                android:layout_width="match_parent"
+                android:id="@+id/zipcode"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:paddingVertical="3dp"
                 android:gravity="center"
-                android:text="lat:"
-                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:text="zipcode"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/city"/>
 
             <TextView
-                android:id="@+id/lng"
-                android:layout_width="match_parent"
+                android:id="@+id/lat"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:paddingVertical="3dp"
                 android:gravity="center"
-                android:text="lng:"
-                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:text="@string/lat"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/zipcode"/>
+
+            <TextView
+                android:id="@+id/lng"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="3dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="@string/lng"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/lat"/>
@@ -151,10 +174,5 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-
-
     </LinearLayout>
-
-
 </androidx.cardview.widget.CardView>

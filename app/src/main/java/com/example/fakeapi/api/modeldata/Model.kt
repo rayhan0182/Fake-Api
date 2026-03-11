@@ -6,7 +6,7 @@ data class Model(
 
     val name: String,
 
-    val uname: String,
+    val username: String,
 
     val email: String,
 

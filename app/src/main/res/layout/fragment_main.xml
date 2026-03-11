@@ -38,6 +38,4 @@
         android:elevation="15dp"
         android:text="create bio"/>
 
-
-
 </LinearLayout>

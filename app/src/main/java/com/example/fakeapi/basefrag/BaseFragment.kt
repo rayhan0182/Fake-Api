@@ -33,9 +33,11 @@ abstract class BaseFragment<Vb: ViewBinding>(
         return binding.root
     }
 
+    abstract fun createuser()
+
     abstract fun responsuser()
 
-    abstract fun createuser()
+
 
 
 }

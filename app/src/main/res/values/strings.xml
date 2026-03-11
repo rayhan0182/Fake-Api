@@ -6,4 +6,15 @@
     <string name="username">username</string>
     <string name="email_mdrayhan8045_gmail_com">email:mdrayhan8045@gmail.com</string>
     <string name="street">street</string>
+    <string name="save">save</string>
+    <string name="write_text">write text</string>
+    <string name="title">title</string>
+    <string name="userid">userid</string>
+    <string name="zyntra">Zyntra</string>
+    <string name="address">Address</string>
+    <string name="stree">street</string>
+    <string name="suite">suite</string>
+    <string name="city">city</string>
+    <string name="lat">lat:</string>
+    <string name="lng">lng:</string>
 </resources>
