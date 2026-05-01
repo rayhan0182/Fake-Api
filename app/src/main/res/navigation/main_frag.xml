@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_frag"
+    app:startDestination="@id/landingFragment">
+
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="com.example.fakeapi.LandingFragment"
+        android:label="fragment_landing"
+        tools:layout="@layout/fragment_landing" >
+        <action
+            android:id="@+id/action_landingFragment_to_useruploadFragment"
+            app:destination="@id/useruploadFragment" />
+        <action
+            android:id="@+id/action_landingFragment_to_showBIodataFragment"
+            app:destination="@id/showBIodataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showBIodataFragment"
+        android:name="com.example.fakeapi.ShowBIodataFragment"
+        android:label="fragment_show_b_iodata"
+        tools:layout="@layout/fragment_show_b_iodata" />
+    <fragment
+        android:id="@+id/useruploadFragment"
+        android:name="com.example.fakeapi.UseruploadFragment"
+        android:label="fragment_userupload"
+        tools:layout="@layout/fragment_userupload" />
+</navigation>
